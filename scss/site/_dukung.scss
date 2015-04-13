@@ -43,15 +43,14 @@
 	bottom: 30px;
 	right: 30px;
 	
-	background-color: $blue-facebook;
-	display: inline-block;
-	padding: 5px 10px;
-	border-radius: 3px;
 	
 	font-size: 14px;
 	text-transform: uppercase;
 	
 	a {
+		background-color: $blue-facebook;
+		padding: 5px 10px;
+		border-radius: 3px;
 		color: $white;	
 	}
 }

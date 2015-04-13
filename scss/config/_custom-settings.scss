@@ -50,3 +50,6 @@ $body-font-style: normal;
 $header-font-weight: 300;
 $header-text-rendering: optimizeLegibility;
 $topbar-link-weight: bold;
+
+$button-bg-color: $primary-color;
+$button-bg-hover: scale-color($button-bg-color, $lightness: 10%);

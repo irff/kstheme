@@ -13,10 +13,19 @@
 }
 
 .top-bar-container {
-	background: none;
-
+	background: $blue-brand;
 	nav.top-bar {
 		background: $blue-brand;
-		max-width: 100%;
+		max-width: 80%;
+		text-align: center;
+
+		ul.title-area {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.name {
+			text-transform: uppercase;
+		}
 	}
 }
