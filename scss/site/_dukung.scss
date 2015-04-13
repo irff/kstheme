@@ -1,0 +1,57 @@
+.header-background {
+	position: relative;
+	min-height: calc(100vh - 45px);
+	margin: 0 auto;
+	background-size: cover;
+	background-image: url('../assets/img/slider-background-03.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-origin: top right;
+	background-position: center;
+}
+
+.box-dukung {
+	position: absolute;
+	bottom: 20%;
+	left: 10%;
+
+	@media #{$small-only} {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 10%;
+		margin: 0 auto;
+	}
+
+	max-height: 360px;
+	max-width: 480px;
+	border-top: 45px solid $light-blue-brand;
+	background-color: $blue-brand;
+	padding: 15px;
+	border-radius: 3px 3px 10px 10px;
+	color: $white;
+
+	h3 {
+		text-align: center;
+		color: $white;
+		margin: 0 15px 15px;
+	}
+}
+
+.box-social {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	
+	background-color: $blue-facebook;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 3px;
+	
+	font-size: 14px;
+	text-transform: uppercase;
+	
+	a {
+		color: $white;	
+	}
+}

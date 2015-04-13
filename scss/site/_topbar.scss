@@ -1,0 +1,22 @@
+
+.top-bar .name {
+	h1 a { font-weight: 500; }
+}
+
+// A more subtle background color for the active menu item
+.top-bar-section li.active:not(.has-form) a:not(.button)  {
+	background: none;
+}
+
+.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
+	background: none;
+}
+
+.top-bar-container {
+	background: none;
+
+	nav.top-bar {
+		background: $blue-brand;
+		max-width: 100%;
+	}
+}
