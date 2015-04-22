@@ -1,8 +1,4 @@
 
-.top-bar .name {
-	h1 a { font-weight: 500; }
-}
-
 // A more subtle background color for the active menu item
 .top-bar-section li.active:not(.has-form) a:not(.button)  {
 	background: none;
@@ -23,9 +19,27 @@
 			display: block;
 			margin: 0 auto;
 		}
+	}
+}
 
-		.name {
-			text-transform: uppercase;
+.navigation {
+	nav.top-bar {
+		ul.title-area {
+			li {
+				float: left;
+				margin: 0 5px;
+				line-height: 45px;
+				text-transform: uppercase;
+				a {
+					display: block;
+					height: 100%;
+					color: $white;
+					padding: 0 10px;
+					&:hover {
+						background-color: $light-blue-brand;
+					}
+				}
+			}
 		}
 	}
 }
