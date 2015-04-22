@@ -1,6 +1,5 @@
 .header-background {
 	position: relative;
-	min-height: calc(100vh - 350px);
 	margin: 0 auto;
 	background-size: cover;
 	background-image: url('../assets/img/slider-background-03.jpg');
@@ -8,6 +7,12 @@
 	background-attachment: fixed;
 	background-origin: top right;
 	background-position: center;
+	
+	min-height: calc(100vh - 350px);
+
+	@media #{$small-only} {
+		min-height: 100vh;
+	}
 }
 
 .box-dukung {

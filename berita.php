@@ -26,11 +26,11 @@ get_header(); ?>
 					<li class="box">
 						<a href="<?php the_permalink(); ?>">
 							<div class="row">
-								<div class="small-6 medium-4 large-6 columns">
+								<div class="small-4 medium-4 large-6 columns">
 									<?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' )[0]; ?>
 									<img src="<?php echo $featured_image; ?>" alt="">
 								</div>
-								<div class="small-6 medium-8 large-6 columns title-container">
+								<div class="small-8 medium-8 large-6 columns title-container">
 									<div class="title">
 										<h3><?php the_title(); ?></h3>										
 									</div>
