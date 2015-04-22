@@ -62,19 +62,3 @@
 		font-style: italic;
 	}
 }
-
-footer {
-	padding: 60px 0;
-	background-color: $gray-bg;
-	color: $white;
-
-	@media #{$small-only} {
-		text-align: center;
-	}
-
-	p {
-		margin: 0;
-	}
-
-
-}

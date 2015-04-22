@@ -1,6 +1,12 @@
 <?php get_header(); ?>
+
+<?php 
+	$GLOBALS['bgi'] = "slider-background-02.jpg";
+	get_template_part( 'parts/masthead' );
+?>
+
 <div class="row">
-	<div class="small-12 large-8 columns" role="main">
+	<div class="small-12 large-12 columns content" role="main">
 
 	<?php do_action( 'foundationpress_before_content' ); ?>
 

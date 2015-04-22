@@ -1,0 +1,28 @@
+.content {
+	padding: 60px 0 30px;
+
+	header {
+		text-align: center;
+		h1 {
+			margin: 0 0 15px;
+		}
+
+		time, p {
+			font-style: italic;
+		}
+	}
+
+	.entry-content {
+		p {
+			font-size: 18px;
+		}
+
+		img {
+			width: 100%;
+			border: none;
+			display: block;
+			text-align: center;
+			margin: 30px auto;
+		}
+	}
+}

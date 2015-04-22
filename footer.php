@@ -1,6 +1,6 @@
 </section>
 
-<footer>
+<footer class="footer">
 	<div class="row">
 		<div class="small-12 large-6 columns">
 			<p>&copy; 2015 Website Resmi Pangeran Khairul Saleh</p>
