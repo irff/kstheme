@@ -1,0 +1,80 @@
+.home-berita {
+	padding: 60px 0;
+	background-color: $gray-bg;
+	text-align: center;
+
+	h1 {
+		color: $white;
+		margin: 0 0 45px;
+	}
+
+	.box {
+		padding: 10px;
+		a {
+			background-color: $white;
+			display: block;
+		}
+		
+		.title-container {
+			display: table;
+			min-height: 223px;
+			padding-left: 0;
+
+			@media #{$medium-only} {
+				min-height: 138px;
+			}
+
+			@media #{$small-only} {
+				min-height: 300px;
+			}
+
+		}
+
+		.title {
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+			min-height: 100%;
+			padding-left: 0;
+			padding-right: 10px;
+		}
+
+		h3 {
+			font-size: 22px;
+		}
+	}
+
+	.selengkapnya {
+		padding-top: 30px;
+	}
+}
+
+.quotes {
+	padding: 60px 0;
+	text-align: center;
+
+	h1 {
+		margin: 0 0 45px;
+	}
+
+	h3 {
+		margin: 0 0 30px;
+		font-style: italic;
+	}
+}
+
+footer {
+	padding: 60px 0;
+	background-color: $gray-bg;
+	color: $white;
+
+	@media #{$small-only} {
+		text-align: center;
+	}
+
+	p {
+		margin: 0;
+	}
+
+
+}

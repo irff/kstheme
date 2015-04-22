@@ -7,6 +7,7 @@
   "ignore": [],
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "slick.js": "~1.5.0"
   }
 }

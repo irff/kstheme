@@ -33,4 +33,12 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
+// Add post thumbnail supports. http://codex.wordpress.org/Post_Thumbnails
+add_theme_support('post-thumbnails');
+// set_post_thumbnail_size(150, 150, false);
+add_image_size('fd-lrg', 1024, 99999);
+add_image_size('fd-med', 768, 99999);
+add_image_size('fd-sm', 320, 9999);
+set_post_thumbnail_size( 320, 320, true );
+
 ?>

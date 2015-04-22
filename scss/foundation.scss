@@ -58,15 +58,25 @@
 @import "../assets/fontawesome/scss/font-awesome.scss";
 
 
+/*
+  Base CSS
+*/
+@import "site/variables"; 
+@import "site/global"; 
+@import "site/wp-admin";
+
+/*
+  Vendor CSS
+*/
+@import "vendor/slick";
+@import "vendor/slick-theme";
+
 /* 
   My custom styles:
   Add your scss files below to structure your project styles
 */ 
-
-@import "site/variables"; 
-@import "site/global"; 
-@import "site/wp-admin";
 @import "site/topbar";
 @import "site/hero";
+@import "site/home";
 @import "site/footer";
 @import "site/dukung";
