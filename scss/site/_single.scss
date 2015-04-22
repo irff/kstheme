@@ -1,3 +1,11 @@
+article {
+	padding: 0 30px;
+
+	@media #{$small-only} {
+		padding: 0 15px;
+	}
+}
+
 .content {
 	padding: 60px 0 30px;
 
@@ -23,6 +31,31 @@
 			display: block;
 			text-align: center;
 			margin: 30px auto;
+		}
+	}
+
+	@media #{$small-only} {
+		header {
+			h1 {
+				font-size: 24px;
+			}
+
+			time, p {
+				font-size: 16px;
+			}
+		}
+		.entry-content {
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&.page-standard {
+		header {
+			h1 {
+				margin: 0 0 45px;
+			}
 		}
 	}
 }

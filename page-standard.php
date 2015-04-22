@@ -11,7 +11,7 @@ get_header(); ?>
 ?>
 
 <div class="row">
-	<div class="small-12 large-12 columns content" role="main">
+	<div class="small-12 large-12 columns content page-standard" role="main">
 
 	<?php /* Start loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>

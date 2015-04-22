@@ -5,4 +5,10 @@
 		width: 100%;
 		margin-top: -180px;
 	}
+
+	@media #{$small-only} {
+		img {
+			margin-top: 0;
+		}
+	}
 }
