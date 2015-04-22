@@ -25,7 +25,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section class="home-berita container">
+<section class="berita container">
 	<div class="row">
 		<div class="large-12 columns">
 			<h1>Berita Terbaru</h1>
@@ -62,7 +62,7 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="large-12 columns selengkapnya">
-			<a href="" class="button">Selengkapnya</a>
+			<a href="<?php echo home_url()."/berita"; ?>" class="button">Selengkapnya</a>
 		</div>
 	</div>
 </section>
