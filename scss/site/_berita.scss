@@ -32,10 +32,17 @@
 				min-height: 200px;
 			}
 
-			@media only screen and (min-width: 0) and (max-width: 580px) {
+			@media only screen and (min-width: 411px) and (max-width: 580px) {
 				min-height: 120px;
 				h3 {
 					font-size: 18px;
+				}
+			}
+
+			@media only screen and (min-width: 0px) and (max-width: 410px) {
+				min-height: 94px;
+				h3 {
+					font-size: 15px;
 				}
 			}
 
