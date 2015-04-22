@@ -20,12 +20,23 @@
 			min-height: 223px;
 			padding-left: 0;
 
-			@media #{$medium-only} {
-				min-height: 138px;
+			
+			@media only screen and (min-width: 801px) and (max-width: 1180px) {
+				min-height: 140px;
+				h3 {
+					font-size: 18px;
+				}
+			}
+			
+			@media only screen and (min-width: 581px) and (max-width: 800px) {
+				min-height: 200px;
 			}
 
-			@media #{$small-only} {
+			@media only screen and (min-width: 0) and (max-width: 580px) {
 				min-height: 120px;
+				h3 {
+					font-size: 18px;
+				}
 			}
 
 		}
@@ -37,6 +48,9 @@
 			min-height: 100%;
 			padding-left: 0;
 			padding-right: 10px;
+			img {
+				margin-left: 15px;
+			}
 		}
 
 		h3 {
