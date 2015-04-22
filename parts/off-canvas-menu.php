@@ -1,3 +1,13 @@
 <aside class="left-off-canvas-menu" aria-hidden="true">
-    <?php foundationpress_mobile_off_canvas(); ?>
+	<ul class="off-canvas-list">
+        <li>
+            <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
+        </li>
+        <li>
+            <a href="<?php echo home_url().'/berita'; ?>">Berita</a>
+        </li>
+        <li>
+            <a href="<?php echo home_url().'/biografi'; ?>">Biografi</a>
+        </li>
+	</ul>
 </aside>
