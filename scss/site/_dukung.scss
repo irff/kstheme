@@ -13,20 +13,20 @@
 	@media #{$small-only} {
 		min-height: 100vh;
 	}
+
+	@media only screen and (min-height: 541px) and (max-height: 800px) {
+		min-height: calc(100vh - 120px);
+	}
+
+	@media only screen and (min-height: 0) and (max-height: 540px) {
+		min-height: calc(100vh - 45px);
+	}
 }
 
 .box-dukung {
 	position: absolute;
 	bottom: 20%;
 	left: 10%;
-
-	@media #{$small-only} {
-		position: absolute;
-		left: 15px;
-		right: 15px;
-		bottom: 10%;
-		margin: 0 auto;
-	}
 
 	max-height: 360px;
 	max-width: 480px;
@@ -41,6 +41,28 @@
 		color: $white;
 		margin: 0 15px 15px;
 	}
+
+	@media #{$small-only} {
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		bottom: 10%;
+		margin: 0 auto;
+	}
+
+	@media only screen and (min-height: 0) and (max-height: 540px) {
+		bottom: 15px;
+		padding: 10px 0;
+		border-top: 30px solid $light-blue-brand;
+		max-height: 300px;
+
+		h3 {
+			margin: 0 10px 10px;
+			font-size: 1.5rem;
+		}
+	}
+
+
 }
 
 .box-social {

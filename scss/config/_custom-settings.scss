@@ -53,3 +53,11 @@ $topbar-link-weight: bold;
 
 $button-bg-color: $primary-color;
 $button-bg-hover: scale-color($button-bg-color, $lightness: 10%);
+
+
+// Media Query Breakpoints
+$small-range: (0px, 800px);
+$medium-range: (801px, 1180px);
+$large-range: (1181px, 1600px);
+$xlarge-range: (1601px, 1920px);
+$xxlarge-range: (1921px, 9999999px);
