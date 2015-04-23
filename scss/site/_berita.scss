@@ -1,17 +1,16 @@
 .berita {
 	padding: 60px 0;
-	background-color: $gray-bg;
 	text-align: center;
+	background-color: $light-white;
 
 	h1 {
-		color: $white;
 		margin: 0 0 45px;
 	}
 
 	.box {
 		padding: 10px;
 		a {
-			background-color: $white;
+			background-color: $blue-brand;
 			display: block;
 		}
 		
@@ -62,6 +61,7 @@
 
 		h3 {
 			font-size: 22px;
+			color: $white;
 		}
 	}
 
@@ -72,7 +72,6 @@
 
 
 .berita-page {
-	background-color: $white;
 	h1 {
 		color: $black;
 		margin: 0 0 45px;
@@ -82,7 +81,7 @@
 	.box {
 		padding: 10px;
 		a {
-			background-color: $gray-2;
+			background-color: $blue-brand;
 			display: block;
 		}
 

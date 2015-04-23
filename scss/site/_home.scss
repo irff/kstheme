@@ -1,12 +1,15 @@
 .quotes {
 	padding: 60px 0;
 	text-align: center;
+	background-color: $blue-brand;
 
 	h1 {
+		color: $white;
 		margin: 0 0 45px;
 	}
 
 	h3 {
+		color: $white;
 		margin: 0 0 30px;
 		font-style: italic;
 	}
