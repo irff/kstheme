@@ -4,7 +4,8 @@ Template Name: Home
 */
 get_header(); ?>
 <section class="header-background">
-	<div class="box-dukung">
+	<!-- 
+	<div class="box-dukung" data-sr>
 		<h3>Dukung Pangeran Khairul Saleh untuk Kalimantan Selatan</h3>
 		<form action="">
 			<div class="row">
@@ -20,15 +21,81 @@ get_header(); ?>
 			</div>
 		</form>
 	</div>
+	  -->
+	  <!-- 
+
+	<div class="container">
+		<div class="row">
+			<div class="large-6 column">
+				<div class="portrait-image">
+					<img src="<?=get_template_directory_uri().'/assets/img/khairul_saleh.png'?>" alt="">					
+				</div>
+			</div>
+			<div class="large-6 column">
+				<div class="tagline">
+					<div class="slogan-1">
+						<h2 data-sr="wait 1s, enter left, move 75px, over 1s">Berpengalaman</h2>						
+					</div>
+					<div class="slogan-2">
+						<h2 data-sr="wait 2s, enter right, move 75px, over 1s">Berprestasi</h2>						
+					</div>
+					<div class="slogan-3">
+						<h2 data-sr="wait 3s, enter left, move 75px, over 1s">Amanah</h2>
+					</div>
+				</div>
+				<div class="dukung" data-sr="wait 4s">
+					<h3>Dukung Pangeran Khairul Saleh untuk Kalimantan Selatan</h3>
+					<form action="">
+						<div class="row">
+							<div class="small-12 large-6 columns">
+								<input type="text" placeholder="Nama">					
+							</div>
+							<div class="small-12 large-6 columns">
+								<input type="text" placeholder="Nomor Handphone">
+							</div>
+							<div class="small-12 large-12 columns">
+								<input type="submit" value="Dukung" class="button bg-red">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="box-social">
 		<a href="https://www.facebook.com/khairulsaleh1964">Follow on Facebook</a>
+	</div>
+	 -->
+	<div class="logo-header">
+		<img src="<?=get_template_directory_uri().'/assets/img/logo-header.png'?>" alt="">	 				
+	</div>
+</section>
+
+<section class="nav">
+	<div class="row">
+		<div class="large-4 column">
+			<div class="link">
+				<a href="/berita">Berita</a>
+			</div>
+			<div class="link">
+				<a href="/biografi">Biografi</a>
+			</div>			
+		</div>
+		<div class="large-4 column">
+			<a href="" class="logo"><img src="<?=get_template_directory_uri().'/assets/img/logo-white.png'?>" alt=""></a>
+		</div>
+		<div class="large-4 column">
+			<div class="link">
+				<a href="https://www.facebook.com/khairulsaleh1964">Follow us on Facebook</a>
+			</div>
+		</div>
 	</div>
 </section>
 
 <section class="berita container">
 	<div class="row">
 		<div class="large-12 columns">
-			<h1>Berita Terbaru</h1>
+			<h1 data-sr>Berita Terbaru</h1>
 		</div>
 	</div>
 	<div class="row">
@@ -39,7 +106,7 @@ get_header(); ?>
 							  'posts_per_page' => 4);
 				$lastposts = get_posts($args);
 				foreach ( $lastposts as $post ) : setup_postdata( $post ); ?>
-					<li class="box">
+					<li class="box" data-sr>
 						<a href="<?php the_permalink(); ?>">
 							<div class="row">
 								<div class="small-4 medium-4 large-6 columns title-container">
@@ -64,7 +131,7 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="large-12 columns selengkapnya">
-			<a href="<?php echo home_url()."/berita"; ?>" class="button">Selengkapnya</a>
+			<a href="<?php echo home_url()."/berita"; ?>" class="button" data-sr>Selengkapnya</a>
 		</div>
 	</div>
 </section>
@@ -72,26 +139,26 @@ get_header(); ?>
 <section class="quotes">
 	<div class="row">
 		<div class="large-12 columns">
-			<h1>Quotes</h1>
+			<h1 data-sr>Quotes</h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="quotes-slider" id="quotes-slider">
 				<div class="quote-entry">
-					<h3>"Realisasi program pembangunan dan aspek pembiayaan harus dipikul bersama-sama. Jika tidak, maka pembangunan infrastruktur di Indonesia akan tertinggal."</h3>
+					<h3 data-sr>"Realisasi program pembangunan dan aspek pembiayaan harus dipikul bersama-sama. Jika tidak, maka pembangunan infrastruktur di Indonesia akan tertinggal."</h3>
 				</div>
 				<div class="quote-entry">
-					<h3>"Kami menyulap TPA yang dulunya kumuh, kotor, dan bau menjadi TPA yang nyaman, sehat dan malah menghasilkan listrik dan gas."</h3>
+					<h3 data-sr>"Kami menyulap TPA yang dulunya kumuh, kotor, dan bau menjadi TPA yang nyaman, sehat dan malah menghasilkan listrik dan gas."</h3>
 				</div>
 				<div class="quote-entry">
-					<h3>"Masalah lapangan pekerjaan kan tanggung jawab kita semua, maka harus kita atasi bersama-sama. Semakin banyak pihak yang terlibat, semakin mudah kita menjalaninya."</h3>
+					<h3 data-sr>"Masalah lapangan pekerjaan kan tanggung jawab kita semua, maka harus kita atasi bersama-sama. Semakin banyak pihak yang terlibat, semakin mudah kita menjalaninya."</h3>
 				</div>
 				<div class="quote-entry">
-					<h3>"Kunci dari kepemimpinan kepala daerah adalah bagaimana kreativitas dan inovasi seorang kepala daerah, dengan kewenangannya, membangun sistem investasi yang memiliki daya saing, bernilai ekonomi tinggi, dan terpecaya."</h3>
+					<h3 data-sr>"Kunci dari kepemimpinan kepala daerah adalah bagaimana kreativitas dan inovasi seorang kepala daerah, dengan kewenangannya, membangun sistem investasi yang memiliki daya saing, bernilai ekonomi tinggi, dan terpecaya."</h3>
 				</div>
 				<div class="quote-entry">
-					<h3>“Bukan hanya memindahkan gedung perkantoran, tetapi juga membangun sebuah kota baru, Martapura Baru, Martapura Jadid.”</h3>
+					<h3 data-sr>“Bukan hanya memindahkan gedung perkantoran, tetapi juga membangun sebuah kota baru, Martapura Baru, Martapura Jadid.”</h3>
 				</div>
 			</div>
 		</div>

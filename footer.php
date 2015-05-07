@@ -19,5 +19,9 @@
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
+
+<script>
+	window.sr = new scrollReveal();
+</script>
 </body>
 </html>
