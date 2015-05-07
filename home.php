@@ -67,7 +67,7 @@ get_header(); ?>
 	</div>
 	 -->
 	<div class="logo-header">
-		<img src="<?=get_template_directory_uri().'/assets/img/logo-header.png'?>" alt="">	 				
+		<img src="<?=get_template_directory_uri().'/assets/img/logo-header.png'?>" alt="">	
 	</div>
 </section>
 
