@@ -73,13 +73,57 @@
 	}
 }
 
+.newberita {
+	padding: 60px 0;
+	background-color: $light-white;
+
+	.box {
+		padding: 10px 20px;
+		a {
+			padding: 30px 30px;
+		}
+	}
+
+	h1 {
+		font-weight: 900;
+		text-transform: uppercase;
+		margin: 0 0 30px;
+	}
+
+	.category {
+		text-align: right;
+		text-transform: uppercase;
+	}
+
+	.title {
+		h3 {
+			font-weight: 700;
+		}
+	}
+
+	a {
+		color: $black;
+	}
+
+	.selengkapnya {
+		text-align: right;
+		padding-right: 25px;
+		a {
+			color: $white;
+			background-color: $blue-brand;
+		}
+	}
+
+	.image {
+		margin: 5px 0 0;
+	}
+}
 
 .berita-page {
 	h1 {
 		color: $black;
 		margin: 0 0 45px;
 	}
-
 
 	.box {
 		padding: 10px;

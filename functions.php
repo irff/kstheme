@@ -41,4 +41,16 @@ add_image_size('fd-med', 768, 99999);
 add_image_size('fd-sm', 320, 9999);
 set_post_thumbnail_size( 320, 320, true );
 
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return '...';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
+
 ?>
