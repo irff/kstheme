@@ -165,7 +165,7 @@ get_header(); ?>
 									?>
 								</div>
 							</div>
-							<?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" )[0]; ?>
+							<?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "thumbnail" )[0]; ?>
 							<div class="image">
 								<img src="<?php echo $featured_image; ?>" alt="">
 							</div>
