@@ -3,6 +3,11 @@
 Template Name: Home
 */
 get_header(); ?>
+<div class="preloader">
+	<div class="animation">
+		<img src="<?=get_template_directory_uri().'/assets/img/preloader.gif'?>" alt="">
+	</div>
+</div>
 <section class="header-background">
 	<!-- 
 	<div class="box-dukung" data-sr>

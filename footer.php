@@ -21,6 +21,11 @@
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 
 <script>
+	$(window).load(function() {
+		$('body').imagesLoaded(function() {
+			$('.preloader').fadeOut(100);
+		});
+	});
 	window.sr = new scrollReveal();
 </script>
 </body>
