@@ -77,6 +77,9 @@ get_header(); ?>
 		<img src="<?=get_template_directory_uri().'/assets/img/logo-header.png'?>" alt="" data-sr="enter top, move 100px, over 2s">
 		<p data-sr="vF 0.1, wait 0.5s, enter bottom, move 70px, over 1.5s">"Kunci dari kepemimpinan kepala daerah adalah bagaimana kreativitas dan inovasi seorang kepala daerah, dengan kewenangannya, membangun sistem investasi yang memiliki daya saing, bernilai ekonomi tinggi, dan terpecaya."</p>
 	</div>
+	<div class="panah">
+		<img src="<?=get_template_directory_uri().'/assets/img/panah.png'?>" alt="" data-sr="vF 0.1 enter top, move 100px, over 1s">
+	</div>
 </section>
 
 <!-- 
