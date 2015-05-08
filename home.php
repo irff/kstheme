@@ -8,6 +8,8 @@ get_header(); ?>
 		<img src="<?=get_template_directory_uri().'/assets/img/preloader.gif'?>" alt="">
 	</div>
 </div>
+
+
 <section class="header-background">
 	<!-- 
 	<div class="box-dukung" data-sr>
@@ -73,28 +75,7 @@ get_header(); ?>
 	 -->
 	<div class="logo-header">
 		<img src="<?=get_template_directory_uri().'/assets/img/logo-header.png'?>" alt="" data-sr="enter top, move 100px, over 2s">
-		<p data-sr="wait 1.5s, enter bottom, move 100px, over 1.5s">"Kunci dari kepemimpinan kepala daerah adalah bagaimana kreativitas dan inovasi seorang kepala daerah, dengan kewenangannya, membangun sistem investasi yang memiliki daya saing, bernilai ekonomi tinggi, dan terpecaya."</p>
-	</div>
-</section>
-
-<section class="nav">
-	<div class="row">
-		<div class="large-4 column">
-			<div class="link">
-				<a href="/berita">Berita</a>
-			</div>
-			<div class="link">
-				<a href="/biografi">Biografi</a>
-			</div>			
-		</div>
-		<div class="large-4 column">
-			<a href="" class="logo"><img src="<?=get_template_directory_uri().'/assets/img/logo-white.png'?>" alt=""></a>
-		</div>
-		<div class="large-4 column">
-			<div class="link">
-				<a href="https://www.facebook.com/khairulsaleh1964">Follow us on Facebook</a>
-			</div>
-		</div>
+		<p data-sr="vF 0.1, wait 0.5s, enter bottom, move 70px, over 1.5s">"Kunci dari kepemimpinan kepala daerah adalah bagaimana kreativitas dan inovasi seorang kepala daerah, dengan kewenangannya, membangun sistem investasi yang memiliki daya saing, bernilai ekonomi tinggi, dan terpecaya."</p>
 	</div>
 </section>
 

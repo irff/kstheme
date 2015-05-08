@@ -28,6 +28,14 @@
 			window.sr = new scrollReveal();
 		});
 	});
+
+	$(window).scroll(function() {
+		if($(window).scrollTop() < 300) {
+			$('section.nav').removeClass('visible');
+		} else {
+			$('section.nav').addClass('visible');
+		}
+	})
 </script>
 </body>
 </html>

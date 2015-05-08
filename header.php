@@ -48,3 +48,4 @@
 
 <section class="container" role="document">
 	<?php do_action( 'foundationpress_after_header' ); ?>
+	<?php include("navigation.php"); ?>
