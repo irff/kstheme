@@ -41,6 +41,13 @@
 		-ms-transform: translate(-50%, -50%);
 		-o-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
+
+		text-align: center;
+		p {
+			margin: 30px 120px 0;
+			font-size: 18px;
+			font-style: italic;
+		}
 	}
 }
 

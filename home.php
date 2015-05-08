@@ -72,7 +72,8 @@ get_header(); ?>
 	</div>
 	 -->
 	<div class="logo-header">
-		<img src="<?=get_template_directory_uri().'/assets/img/logo-header.png'?>" alt="" data-sr="enter top, move 100px, over 2s">	
+		<img src="<?=get_template_directory_uri().'/assets/img/logo-header.png'?>" alt="" data-sr="enter top, move 100px, over 2s">
+		<p data-sr="wait 1.5s, enter bottom, move 100px, over 1.5s">"Kunci dari kepemimpinan kepala daerah adalah bagaimana kreativitas dan inovasi seorang kepala daerah, dengan kewenangannya, membangun sistem investasi yang memiliki daya saing, bernilai ekonomi tinggi, dan terpecaya."</p>
 	</div>
 </section>
 
