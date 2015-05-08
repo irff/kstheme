@@ -23,10 +23,11 @@
 <script>
 	$(window).load(function() {
 		$('body').imagesLoaded(function() {
+			console.log('yes');
 			$('.preloader').fadeOut(100);
+			window.sr = new scrollReveal();
 		});
 	});
-	window.sr = new scrollReveal();
 </script>
 </body>
 </html>
