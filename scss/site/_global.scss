@@ -76,3 +76,9 @@ img.alignright {
 		transform: translate(-50%, -50%);
 	}
 }
+
+section,
+footer {
+	z-index: 1;
+	position: relative;
+}

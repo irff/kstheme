@@ -24,7 +24,7 @@ get_header(); ?>
 				$counter = 1;
 				$lastposts = get_posts($args);
 				foreach ( $lastposts as $post ) : setup_postdata( $post ); ?>
-					<li class="box" data-sr>
+					<li class="box" data-sr="vF 0.5, wait 0.35s">
 						<a href="<?php the_permalink(); ?>">
 							<div class="row">
 								<div class="large-6 column">
