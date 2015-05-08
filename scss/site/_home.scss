@@ -21,10 +21,6 @@
 }
 
 section {
-	z-index: 2;
-}
-
-section.container {
 	z-index: 1;
 	position: relative;
 }
@@ -258,6 +254,7 @@ section.nav {
 	}
 }
 .quotes {
+	position: relative;
 	padding: 60px 0;
 	text-align: center;
 	background-color: $blue-brand;
