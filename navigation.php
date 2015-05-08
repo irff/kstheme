@@ -10,7 +10,7 @@
 			</div>			
 		</div>
 		<div class="large-4 column">
-			<a href="" class="logo"><img src="<?=get_template_directory_uri().'/assets/img/logo-white.png'?>" alt=""></a>
+			<a href="<?=bloginfo( 'url' )?>" class="logo"><img src="<?=get_template_directory_uri().'/assets/img/logo-white.png'?>" alt=""></a>
 		</div>
 		<div class="large-4 column">
 			<div class="link">
