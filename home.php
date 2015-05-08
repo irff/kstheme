@@ -78,7 +78,9 @@ get_header(); ?>
 		<p data-sr="vF 0.1, wait 0.5s, enter bottom, move 70px, over 1.5s">"Kunci dari kepemimpinan kepala daerah adalah bagaimana kreativitas dan inovasi seorang kepala daerah, dengan kewenangannya, membangun sistem investasi yang memiliki daya saing, bernilai ekonomi tinggi, dan terpecaya."</p>
 	</div>
 	<div class="panah">
-		<img src="<?=get_template_directory_uri().'/assets/img/panah.png'?>" alt="" data-sr="vF 0.1 enter top, move 100px, over 1s">
+		<a href="#berita" data-scroll>
+			<img src="<?=get_template_directory_uri().'/assets/img/panah.png'?>" alt="" data-sr="vF 0.1 enter top, move 100px, over 1s">
+		</a>
 	</div>
 </section>
 
@@ -128,7 +130,7 @@ get_header(); ?>
 </section>
  -->
 
-<section class="newberita container">
+<section class="newberita container" id="berita">
 	<div class="row">
 		<div class="large-12 columns">
 			<h1 data-sr>Berita Terbaru</h1>

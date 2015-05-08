@@ -1,3 +1,262 @@
+@-webkit-keyframes naikturun {
+	from {
+		bottom: 20px;
+	}
+
+	to {
+		bottom: 50px;
+	}
+}
+
+@keyframes naikturun {
+	from {
+		width: 60px;
+		bottom: 20px;
+	}
+
+	to {
+		width: 40px;
+		bottom: 50px;
+	}
+}
+
+section {
+	z-index: 2;
+}
+
+section.container {
+	z-index: 1;
+	position: relative;
+}
+
+.header-background {
+	z-index: 0;
+	position: relative;
+	margin: 0 auto;
+	// background-image: url('../assets/img/logo-header.png');
+	// background-repeat: no-repeat;
+	// background-attachment: fixed;
+	// background-origin: center center;
+	// background-position: 50% 35%;
+	// background-color: $white-bg;
+	
+	height: 100vh;	
+
+	// min-height: calc(100vh - 200px);
+
+	// @media #{$small-only} {
+	// 	min-height: 100vh;
+	// }
+
+	// @media only screen and (min-height: 541px) and (max-height: 800px) {
+	// 	min-height: calc(100vh - 120px);
+	// }
+
+	// @media only screen and (min-height: 0) and (max-height: 540px) {
+	// 	min-height: calc(100vh - 45px);
+	// }
+
+	.portrait-image {
+		padding: 60px 0 0;
+	}
+
+	.bg-red {
+		background-color: $red-brand;
+		color: $white;
+		border-radius: 4px;
+	}
+
+	.logo-header {
+		z-index: -1;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+
+		text-align: center;
+		p {
+			margin: 100px 120px 0;
+			font-size: 20px;
+			font-style: italic;
+		}
+	}
+
+	.panah {
+		position: fixed;
+		z-index: 0;
+		bottom: 20px;
+		left: 50%;
+		-webkit-transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		-o-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+		width: 50px;
+		height: 30px;
+
+		-webkit-animation-duration: 0.8s;
+		-webkit-animation-name: naikturun;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-timing-function: linear;
+		animation-duration: 0.8s;
+		animation-name: naikturun;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: linear;
+		a {
+			width: 100%;
+			height: 100%;
+			display: block;			
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.box-dukung {
+	position: absolute;
+	bottom: 20%;
+	left: 10%;
+
+	max-height: 360px;
+	max-width: 480px;
+	border-top: 45px solid $light-blue-brand;
+	background-color: $blue-brand;
+	padding: 15px;
+	border-radius: 3px 3px 10px 10px;
+	color: $white;
+
+	h3 {
+		text-align: center;
+		color: $white;
+		margin: 0 15px 15px;
+	}
+
+	@media #{$small-only} {
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		bottom: 10%;
+		margin: 0 auto;
+	}
+
+	@media only screen and (min-height: 0) and (max-height: 540px) {
+		bottom: 15px;
+		padding: 10px 0;
+		border-top: 30px solid $light-blue-brand;
+		max-height: 300px;
+
+		h3 {
+			margin: 0 10px 10px;
+			font-size: 1.5rem;
+		}
+	}
+
+
+}
+
+.box-social {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	
+	
+	font-size: 14px;
+	text-transform: uppercase;
+	
+	a {
+		background-color: $blue-facebook;
+		padding: 5px 10px;
+		border-radius: 3px;
+		color: $white;	
+	}
+
+	@media #{$small-only} {
+		display: none;
+	}
+}
+
+.tagline {
+	margin-top: 140px;
+	h2 {
+		text-align: center;
+		display: inline-block;
+		color: white;
+		padding: 8px 30px;
+		background-color: $blue-brand;
+		width: 330px;
+	}
+
+	.slogan-1 {
+
+	}
+	.slogan-2 {
+		padding-left: 40px;
+	}
+	.slogan-3 {
+		padding-left: 80px;
+	}
+}
+
+.dukung {
+	padding: 45px 0 0;
+	text-align: center;
+	h3 {
+		margin-bottom: 15px;
+	}
+}
+
+section.nav {
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	height: 110px;
+	width: 100%;
+	text-align: center;
+	padding: 5px 15px 10px;
+	background-color: $blue-brand;
+	color: $white;
+	opacity: 0;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 1s ease-in-out;
+	-o-transition: -o-transform 0.5s ease-in-out, opacity 1s ease-in-out;
+	transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
+	&.visible {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	.link {
+		font-weight: 900;
+		line-height: 110px;
+		display: inline;
+		margin: 0 65px;
+		text-transform: uppercase;
+	}
+
+	a.logo {
+		display: block;
+		padding: 25px 0 30px;
+		img {
+			height: 50px;
+		}
+	}
+
+	a {
+		color: $white;
+	}
+}
 .quotes {
 	padding: 60px 0;
 	text-align: center;

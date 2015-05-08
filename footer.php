@@ -20,12 +20,18 @@
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 
+<script src="<?php echo get_template_directory_uri().'/js/vendor/smooth-scroll.min.js'; ?>"></script>
+
 <script>
 	$(window).load(function() {
 		$('body').imagesLoaded(function() {
-			console.log('yes');
 			$('.preloader').fadeOut(100);
 			window.sr = new scrollReveal();
+			smoothScroll.init({
+				speed: 700,
+				updateURL: false,
+				offset: 100
+			});
 		});
 	});
 
