@@ -7,20 +7,22 @@
 	// background-origin: center center;
 	// background-position: 50% 35%;
 	// background-color: $white-bg;
+	
+	height: 640px;	
 
-	min-height: calc(100vh - 200px);
+	// min-height: calc(100vh - 200px);
 
-	@media #{$small-only} {
-		min-height: 100vh;
-	}
+	// @media #{$small-only} {
+	// 	min-height: 100vh;
+	// }
 
-	@media only screen and (min-height: 541px) and (max-height: 800px) {
-		min-height: calc(100vh - 120px);
-	}
+	// @media only screen and (min-height: 541px) and (max-height: 800px) {
+	// 	min-height: calc(100vh - 120px);
+	// }
 
-	@media only screen and (min-height: 0) and (max-height: 540px) {
-		min-height: calc(100vh - 45px);
-	}
+	// @media only screen and (min-height: 0) and (max-height: 540px) {
+	// 	min-height: calc(100vh - 45px);
+	// }
 
 	.portrait-image {
 		padding: 60px 0 0;
