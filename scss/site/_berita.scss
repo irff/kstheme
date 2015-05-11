@@ -1,80 +1,11 @@
-.berita {
-	padding: 60px 0;
-	text-align: center;
-	background-color: $light-white;
-
-	h1 {
-		margin: 0 0 45px;
-	}
-
-	.box {
-		padding: 10px;
-		a {
-			background-color: $blue-brand;
-			display: block;
-		}
-		
-		.title-container {
-			display: table;
-			min-height: 223px;
-			padding-left: 0;
-
-			
-			@media only screen and (min-width: 801px) and (max-width: 1180px) {
-				min-height: 140px;
-				h3 {
-					font-size: 18px;
-				}
-			}
-			
-			@media only screen and (min-width: 581px) and (max-width: 800px) {
-				min-height: 200px;
-			}
-
-			@media only screen and (min-width: 411px) and (max-width: 580px) {
-				min-height: 120px;
-				h3 {
-					font-size: 18px;
-				}
-			}
-
-			@media only screen and (min-width: 0px) and (max-width: 410px) {
-				min-height: 94px;
-				h3 {
-					font-size: 15px;
-				}
-			}
-
-		}
-
-		.title {
-			text-align: center;
-			display: table-cell;
-			vertical-align: middle;
-			min-height: 100%;
-			padding-left: 0;
-			padding-right: 10px;
-			img {
-				margin-left: 15px;
-			}
-		}
-
-		h3 {
-			font-size: 22px;
-			color: $white;
-		}
-	}
-
-	.selengkapnya {
-		padding-top: 30px;
-		a {
-			background-color: $blue-brand;
-		}
-	}
-}
-
 .newberita {
 	padding: 60px 0;
+	&.newberita-home {
+		padding: 30px 0 60px;
+		h1 {
+			margin: 60px 0 30px;
+		}
+	}
 	background-color: $white-bg;
 
 	.box {
@@ -87,7 +18,7 @@
 	h1 {
 		font-weight: 900;
 		text-transform: uppercase;
-		margin: 0 0 30px;
+		margin: 45px 0 30px;
 	}
 
 	.category {

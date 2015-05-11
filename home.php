@@ -84,55 +84,44 @@ get_header(); ?>
 	</div>
 </section>
 
-<!-- 
-<section class="berita container">
+<section class="subscribe">
 	<div class="row">
 		<div class="large-12 columns">
-			<h1 data-sr>Berita Terbaru</h1>
+			<div class="separator-line"></div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="large-12 columns">
-			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
-				<?php
-				$args = Array('category_name' => 'berita',
-							  'posts_per_page' => 4);
-				$lastposts = get_posts($args);
-				foreach ( $lastposts as $post ) : setup_postdata( $post ); ?>
-					<li class="box" data-sr>
-						<a href="<?php the_permalink(); ?>">
-							<div class="row">
-								<div class="small-4 medium-4 large-6 columns title-container">
-									<?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' )[0]; ?>
-									<div class="title">
-										<img src="<?php echo $featured_image; ?>" alt="">
-									</div>
-								</div>
-								<div class="small-8 medium-8 large-6 columns title-container">
-									<div class="title">
-										<h3><?php the_title(); ?></h3>										
-									</div>
-								</div>
-							</div>
-						</a>
-					</li>
-				<?php
-				endforeach; 
-				wp_reset_postdata(); ?>
-			</ul>
+		<div class="large-6 columns">
+			<div class="quotes">
+				<h4 data-sr>"Realisasi program pembangunan dan aspek pembiayaan harus dipikul bersama-sama. Jika tidak, maka pembangunan infrastruktur di Indonesia akan tertinggal."</h4>
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="large-12 columns selengkapnya">
-			<a href="<?php echo home_url()."/berita"; ?>" class="button" data-sr>Selengkapnya</a>
+		<div class="large-6 columns">
+			<div class="form-subscribe" data-sr>
+				<h4>Dukung Pangeran Khairul Saleh untuk Kalimantan Selatan</h4>
+				<form action="">
+					<div class="row">
+						<div class="small-12 large-6 columns">
+							<input type="text" placeholder="Nama">					
+						</div>
+						<div class="small-12 large-6 columns">
+							<input type="text" placeholder="Nomor Handphone">
+						</div>
+						<div class="small-12 large-12 columns">
+							<input type="submit" value="Dukung" class="button bg-red">
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </section>
- -->
 
-<section class="newberita container" id="berita">
+
+<section class="newberita newberita-home container" id="berita">
 	<div class="row">
 		<div class="large-12 columns">
+			<div class="separator-line"></div>
 			<h1 data-sr>Berita Terbaru</h1>
 		</div>
 	</div>
