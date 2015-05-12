@@ -11,68 +11,6 @@ get_header(); ?>
 
 
 <section class="header-background">
-	<!-- 
-	<div class="box-dukung" data-sr>
-		<h3>Dukung Pangeran Khairul Saleh untuk Kalimantan Selatan</h3>
-		<form action="">
-			<div class="row">
-				<div class="small-12 large-6 columns">
-					<input type="text" placeholder="Nama">					
-				</div>
-				<div class="small-12 large-6 columns">
-					<input type="text" placeholder="Nomor Handphone">
-				</div>
-				<div class="small-12 large-12 columns">
-					<input type="submit" value="Dukung" class="button expand">
-				</div>
-			</div>
-		</form>
-	</div>
-	  -->
-	  <!-- 
-
-	<div class="container">
-		<div class="row">
-			<div class="large-6 column">
-				<div class="portrait-image">
-					<img src="<?=get_template_directory_uri().'/assets/img/khairul_saleh.png'?>" alt="">					
-				</div>
-			</div>
-			<div class="large-6 column">
-				<div class="tagline">
-					<div class="slogan-1">
-						<h2 data-sr="wait 1s, enter left, move 75px, over 1s">Berpengalaman</h2>						
-					</div>
-					<div class="slogan-2">
-						<h2 data-sr="wait 2s, enter right, move 75px, over 1s">Berprestasi</h2>						
-					</div>
-					<div class="slogan-3">
-						<h2 data-sr="wait 3s, enter left, move 75px, over 1s">Amanah</h2>
-					</div>
-				</div>
-				<div class="dukung" data-sr="wait 4s">
-					<h3>Dukung Pangeran Khairul Saleh untuk Kalimantan Selatan</h3>
-					<form action="">
-						<div class="row">
-							<div class="small-12 large-6 columns">
-								<input type="text" placeholder="Nama">					
-							</div>
-							<div class="small-12 large-6 columns">
-								<input type="text" placeholder="Nomor Handphone">
-							</div>
-							<div class="small-12 large-12 columns">
-								<input type="submit" value="Dukung" class="button bg-red">
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="box-social">
-		<a href="https://www.facebook.com/khairulsaleh1964">Follow on Facebook</a>
-	</div>
-	 -->
 	<div class="logo-header">
 		<img src="<?=get_template_directory_uri().'/assets/img/logo-header.png'?>" alt="" data-sr="enter top, move 100px, over 2s">
 		<p data-sr="vF 0.1, wait 0.5s, enter bottom, move 70px, over 1.5s">"Kunci dari kepemimpinan kepala daerah adalah bagaimana kreativitas dan inovasi seorang kepala daerah, dengan kewenangannya, membangun sistem investasi yang memiliki daya saing, bernilai ekonomi tinggi, dan terpercaya."</p>
@@ -127,7 +65,7 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="large-12 columns">
-			<ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-3">
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
 				<?php
 				$args = Array('category_name' => 'berita',
 							  'posts_per_page' => 3);

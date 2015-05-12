@@ -42,6 +42,17 @@
 			$('section.nav').addClass('visible');
 		}
 	})
+	
+	//Push Menu
+	var     menuRight = document.getElementById( 'menu' ),
+	        showRightPush = document.getElementById( 'showMenu' ),
+	        body = document.body;
+	 
+	showRightPush.onclick = function() {
+	    classie.toggle( this, 'active' );
+	    classie.toggle( menuRight, 'open' );
+	};
 </script>
+
 </body>
 </html>

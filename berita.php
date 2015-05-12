@@ -17,7 +17,7 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="large-12 columns">
-			<ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-3">
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
 				<?php
 				$args = Array('category_name' => 'berita',
 							  'posts_per_page' => 999);

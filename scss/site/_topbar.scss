@@ -22,24 +22,87 @@
 	}
 }
 
-.navigation {
-	nav.top-bar {
-		ul.title-area {
-			li {
-				float: left;
-				margin: 0 5px;
-				line-height: 45px;
-				text-transform: uppercase;
-				a {
-					display: block;
-					height: 100%;
-					color: $white;
-					padding: 0 10px;
-					&:hover {
-						background-color: $light-blue-brand;
-					}
-				}
-			}
+
+/* -- Off Canvas Navigation menu -- */
+ 
+.menu {
+    background: $red-brand;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    right: -250px;
+    z-index: 1000;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+    &.open {
+    	right: 0px;
+    }
+	
+	h3 {
+		padding: 0.8em 1em 1em 1em;
+		color: #fff;
+	}
+    
+    a {
+	    display: block;
+	    padding: 10px 5px 10px 2em;
+	    color: #ccc;
+	    color: rgba(255,255,255, 0.7);
+	    font-size: 17px;
+	    letter-spacing: 1px;
+	    margin: 0px;
+	    -webkit-transition: color 0.2s ease;
+	    -moz-transition: color 0.2s ease;
+	    transition: color 0.2s ease;
+
+	    &:hover {
+		 	color: #fff;
+		 	color: rgba(255,255,255,1);	    	
+	    }
+    	
+    }
+	button#showMenu {
+		padding: 15px 20px;
+		position: fixed;
+		top: 50px;
+		right: 50px;
+		cursor: pointer;
+		color: #fff;
+		font-size: 20px;
+		border: 0px;
+		background: #555;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+
+		z-index: 10000;
+
+		&:focus {
+			cursor: pointer;
+			outline: 0px;
+		}
+
+		&:hover{
+			cursor: pointer;
+			background: rgba(0,0,0,0.3);
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
 		}
 	}
+
+	@media #{$medium-up} {
+		display: none;
+	}
+}
+
+#showMenu {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 99;
 }

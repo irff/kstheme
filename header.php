@@ -23,28 +23,18 @@
 
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?>>
+	<body>
 	<?php do_action( 'foundationpress_after_body' ); ?>
-	<!-- 
-	<div class="off-canvas-wrap" data-offcanvas>
-	<div class="inner-wrap">
-	 -->
 	<?php do_action( 'foundationpress_layout_start' ); ?>
-	<!-- 	<nav class="tab-bar show-for-small-only">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-		</section>
-		<section class="middle tab-bar-section">
-			
-			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
 
-		</section>
+	<nav class="menu" id="menu">
+		<h3>Menu</h3>
+		<a href="<?=bloginfo( 'url' )?>">Beranda</a>
+		<a href="/berita">Berita</a>
+		<a href="/biografi">Biografi</a>
+		<a href="https://www.facebook.com/khairulsaleh1964">Facebook</a>
+		<button id="showMenu"><i class="fa fa-bars"></i></button>
 	</nav>
-
-	<?php get_template_part( 'parts/off-canvas-menu' ); ?>
-
-	<?php get_template_part( 'parts/top-bar' ); ?>
- -->
 
 <section class="container" role="document">
 	<?php do_action( 'foundationpress_after_header' ); ?>
