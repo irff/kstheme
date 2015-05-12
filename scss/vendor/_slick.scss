@@ -2,7 +2,6 @@
 
 .slick-slider {
     position: relative;
-    overflow: hidden;
     display: block;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -18,7 +17,7 @@
 }
 .slick-list {
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     display: block;
     margin: 0;
     padding: 0;
