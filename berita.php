@@ -21,10 +21,9 @@ get_header(); ?>
 				<?php
 				$args = Array('category_name' => 'berita',
 							  'posts_per_page' => 999);
-				$counter = 1;
 				$lastposts = get_posts($args);
 				foreach ( $lastposts as $post ) : setup_postdata( $post ); ?>
-					<li class="box" data-sr="vF 0.5, wait 0.35s">
+					<li class="box" data-sr="vF 0.5, wait 0.4s">
 						<a href="<?php the_permalink(); ?>">
 							<div class="row">
 								<div class="large-6 column">
@@ -50,7 +49,6 @@ get_header(); ?>
 						</a>
 					</li>
 				<?php
-					$counter++;
 				endforeach; 
 				wp_reset_postdata(); ?>
 			</ul>			

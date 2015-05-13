@@ -16,13 +16,13 @@ get_header(); ?>
 		<p data-sr="vF 0.1, wait 0.5s, enter bottom, move 70px, over 1.5s">"Kunci dari kepemimpinan kepala daerah adalah bagaimana kreativitas dan inovasi seorang kepala daerah, dengan kewenangannya, membangun sistem investasi yang memiliki daya saing, bernilai ekonomi tinggi, dan terpercaya."</p>
 	</div>
 	<div class="panah">
-		<a href="#berita" data-scroll>
+		<a href="#subscribe" data-scroll>
 			<img src="<?=get_template_directory_uri().'/assets/img/panah.png'?>" alt="" data-sr="vF 0.1 enter top, move 100px, over 1s">
 		</a>
 	</div>
 </section>
 
-<section class="subscribe">
+<section class="subscribe" id="subscribe">
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="separator-line"></div>
@@ -69,10 +69,9 @@ get_header(); ?>
 				<?php
 				$args = Array('category_name' => 'berita',
 							  'posts_per_page' => 3);
-				$counter = 1;
 				$lastposts = get_posts($args);
 				foreach ( $lastposts as $post ) : setup_postdata( $post ); ?>
-					<li class="box" data-sr='wait <?php echo $counter*0.4; ?>s'>
+					<li class="box" data-sr='wait 0.4ss'>
 						<a href="<?php the_permalink(); ?>">
 							<div class="row">
 								<div class="large-6 column">
@@ -98,7 +97,6 @@ get_header(); ?>
 						</a>
 					</li>
 				<?php
-					$counter++;
 				endforeach; 
 				wp_reset_postdata(); ?>
 			</ul>			
@@ -112,11 +110,6 @@ get_header(); ?>
 </section>
 
 <section class="quotes">
-	<div class="row">
-		<div class="large-12 columns">
-			<h1 data-sr>Quotes</h1>
-		</div>
-	</div>
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="quotes-slider" id="quotes-slider" data-sr>
