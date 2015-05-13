@@ -209,7 +209,9 @@ section.quotes {
 	padding: 60px 0 60px;
 	text-align: center;
 	background-color: $blue-brand;
-
+	background-image: url('../assets/img/bg-quote.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
 	h1 {
 		color: $white;
 		margin: 0 0 45px;
