@@ -8,11 +8,24 @@
 
 footer.footer {
 	padding: 60px 0;
-	background-color: $gray-bg;
+	background-color: darken($red-brand, 10%);
 	color: $white;
+	text-align: center;
 
-	@media #{$small-only} {
-		text-align: center;
+	a.logo {
+		display: block;
+		margin: 15px 0;
+		img {
+			height: 50px;
+		}
+	}
+
+	.social-links {
+		padding: 15px 0;
+		a {
+			text-transform: uppercase;
+			color: $white;
+		}
 	}
 
 	p {

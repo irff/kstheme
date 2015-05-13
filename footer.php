@@ -2,11 +2,14 @@
 
 <footer class="footer">
 	<div class="row">
-		<div class="small-12 large-6 columns">
+		<div class="small-12 large-12 columns">
+			<a href="<?=bloginfo( 'url' )?>" class="logo"><img src="<?=get_template_directory_uri().'/assets/img/logo-white.png'?>" alt=""></a>
+
+			<div class="social-links">
+				<a href="https://www.facebook.com/khairulsaleh1964">Follow on Facebook</a>				
+			</div>
+
 			<p>&copy; 2015 Website Resmi Pangeran Khairul Saleh</p>
-		</div>
-		<div class="small-12 large-6 columns">
-			
 		</div>
 	</div>
 </footer>

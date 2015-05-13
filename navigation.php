@@ -14,7 +14,7 @@
 		</div>
 		<div class="medium-4 large-4 column">
 			<div class="link">
-				<a href="https://www.facebook.com/khairulsaleh1964">Follow us on Facebook</a>
+				<a href="https://www.facebook.com/khairulsaleh1964">Follow on Facebook</a>
 			</div>
 		</div>
 	</div>
