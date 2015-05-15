@@ -22,13 +22,24 @@ footer.footer {
 	}
 
 	.social-links {
-		padding: 15px 0;
+		padding: 15px;
 		a {
+			padding: 15px;
 			text-transform: uppercase;
 			color: $white;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			-o-border-radius: 3px;
+			border-radius: 3px;
 			i {
 				margin-right: 10px;
 				font-size: 18px;
+			}
+
+			&:hover {
+				background-color: $white;
+				color: $red-brand;
 			}
 		}
 	}
@@ -44,9 +55,9 @@ footer.footer {
 	}
 
 	a, p {
-		-webkit-transition: opacity 0.3s ease-out;
-		-o-transition: opacity 0.3s ease-out;
-		transition: opacity 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
 		font-size: 12px;
 		text-transform: uppercase;
 		letter-spacing: 2px;

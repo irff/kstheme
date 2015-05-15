@@ -18,6 +18,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		wp_register_script( 'scrollreveal', get_template_directory_uri() . '/js/vendor/scrollReveal.min.js', array(), '1.5.0', false );
 		wp_register_script( 'imagesloaded', get_template_directory_uri() . '/js/vendor/imagesloaded.pkgd.min.js', array(), '1.5.0', false );
 		wp_register_script( 'classie', get_template_directory_uri() . '/js/vendor/classie.js', array(), '1.5.0', false );
+		wp_register_script( 'stellar', get_template_directory_uri() . '/js/vendor/jquery.stellar.min.js', array(), '1.5.0', false );
 
 		// CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header.
 		wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), '2.1.0', false );
@@ -40,6 +41,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		wp_enqueue_script( 'scrollreveal' );
 		wp_enqueue_script( 'imagesloaded' );
 		wp_enqueue_script( 'classie' );
+		wp_enqueue_script( 'stellar' );
 		wp_enqueue_script( 'kstheme' );
 
 	}

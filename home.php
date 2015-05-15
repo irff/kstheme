@@ -102,7 +102,7 @@ get_header(); ?>
 	</div>	
 </section>
 
-<section class="quotes">
+<section class="quotes" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="1000">
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="quotes-slider" id="quotes-slider" data-sr>

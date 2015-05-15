@@ -55,6 +55,10 @@
 	    classie.toggle( this, 'active' );
 	    classie.toggle( menuRight, 'open' );
 	};
+
+	$(window).stellar({
+		positionProperty: 'transform'
+	});
 </script>
 
 </body>
