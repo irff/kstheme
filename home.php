@@ -3,8 +3,6 @@
 Template Name: Home
 */
 get_header(); ?>
-
-
 <section class="header-background">
 	<div class="logo-header">
 		<img src="<?=get_template_directory_uri().'/assets/img/logo-header.png'?>" alt="" data-sr="enter top, move 100px, over 2s">
@@ -69,10 +67,10 @@ get_header(); ?>
 					<li class="box" data-sr='wait 0.4ss'>
 						<a href="<?php the_permalink(); ?>">
 							<div class="row">
-								<div class="large-6 column">
+								<div class="large-6 medium-6 small-6 column">
 									<?php the_time( get_option( 'date_format' ) ); ?>
 								</div>
-								<div class="large-6 column category">
+								<div class="large-6 medium-6 small-6 column category">
 									<?php 
 										$category = get_the_category(); 
 										echo $category[0]->cat_name;

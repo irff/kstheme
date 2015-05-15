@@ -26,10 +26,10 @@ get_header(); ?>
 					<li class="box" data-sr="vF 0.5, wait 0.4s">
 						<a href="<?php the_permalink(); ?>">
 							<div class="row">
-								<div class="large-6 column">
+								<div class="large-6 medium-6 small-6 column">
 									<?php the_time( get_option( 'date_format' ) ); ?>
 								</div>
-								<div class="large-6 column category">
+								<div class="large-6 medium-6 small-6 column category">
 									<?php 
 										$category = get_the_category(); 
 										echo $category[0]->cat_name;
