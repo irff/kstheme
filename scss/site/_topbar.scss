@@ -64,18 +64,18 @@ nav.menu {
 		 	color: #fff;
 		 	color: rgba(255,255,255,1);	    	
 	    }
-    	
     }
+
 	button#showMenu {
 		padding: 15px 20px;
 		position: fixed;
-		top: 50px;
-		right: 50px;
+		top: 0;
+		right: 0;
 		cursor: pointer;
 		color: #fff;
 		font-size: 20px;
 		border: 0px;
-		background: #555;
+		background: $red-brand;
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
@@ -88,8 +88,8 @@ nav.menu {
 		}
 
 		&:hover{
+			background: $red-brand-transparent;
 			cursor: pointer;
-			background: rgba(0,0,0,0.3);
 			-webkit-transition: all 0.2s ease-in-out;
 			-moz-transition: all 0.2s ease-in-out;
 			transition: all 0.2s ease-in-out;
