@@ -35,7 +35,12 @@
 		<a href="https://www.facebook.com/khairulsaleh1964">Facebook</a>
 		<button id="showMenu"><i class="fa fa-bars"></i></button>
 	</nav>
-
+	
+	<div class="preloader">
+		<div class="animation">
+			<img src="<?=get_template_directory_uri().'/assets/img/preloader.gif'?>" alt="">
+		</div>
+	</div>
 <section class="container" role="document">
 	<?php do_action( 'foundationpress_after_header' ); ?>
 	<?php include("navigation.php"); ?>

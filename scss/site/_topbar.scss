@@ -25,15 +25,16 @@
 
 /* -- Off Canvas Navigation menu -- */
  
-.menu {
+nav.menu {
     background: $red-brand;
     position: fixed;
     width: 250px;
     height: 100%;
     top: 0;
     right: -250px;
-    z-index: 1000;
 
+	z-index: 10;
+    
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -78,9 +79,9 @@
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-
-		z-index: 10000;
-
+		
+		z-index: 20;
+	
 		&:focus {
 			cursor: pointer;
 			outline: 0px;
@@ -98,11 +99,4 @@
 	@media #{$medium-up} {
 		display: none;
 	}
-}
-
-#showMenu {
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	z-index: 99;
 }
