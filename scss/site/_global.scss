@@ -10,7 +10,7 @@ body {
 	background-color: $light-white;
 }
 
-// Reset  rgin and padding on figure element
+// Reset margin and padding on figure element
 figure { 
 	margin: 0; 
 	padding: 0;
@@ -81,10 +81,6 @@ section,
 footer {
 	z-index: 1;
 	position: relative;
-    -webkit-transform:translateZ(1px);
-    -moz-transform:translateZ(1px);
-    -o-transform:translateZ(1px);
-    transform:translateZ(1px);
 }
 
 .separator-line {
