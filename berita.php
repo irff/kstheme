@@ -5,7 +5,7 @@ Template Name: Berita
 get_header(); ?>
 
 <?php 
-	$GLOBALS['bgi'] = "slider-background-03.jpg";
+	$GLOBALS['bgi'] = "header-biografi.jpg";
 	get_template_part( 'parts/masthead' );
 ?>
 

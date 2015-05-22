@@ -6,7 +6,7 @@ get_header(); ?>
 
 
 <?php 
-	$GLOBALS['bgi'] = "slider-background-02.jpg";
+	$GLOBALS['bgi'] = "header-biografi.jpg";
 	get_template_part( 'parts/masthead' );
 ?>
 
