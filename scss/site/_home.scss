@@ -18,8 +18,7 @@
 	}
 }
 
-.header-background {
-	z-index: 0;
+div.header-background {
 	position: relative;
 	margin: 0 auto;
 	
@@ -30,10 +29,6 @@
 	}
 
 	.logo-header {
-        -webkit-transform:translateZ(1px);
-        -moz-transform:translateZ(1px);
-        -o-transform:translateZ(1px);
-        transform:translateZ(1px);
 		position: fixed;
 		top: 50%;
 		left: 50%;
@@ -52,10 +47,6 @@
 
 	.panah {
 		position: fixed;
-        -webkit-transform:translateZ(1px);
-        -moz-transform:translateZ(1px);
-        -o-transform:translateZ(1px);
-        transform:translateZ(1px);
 		bottom: 20px;
 		left: 50%;
 		-webkit-transform: translate(-50%, 0);
@@ -101,10 +92,6 @@
 			bottom: 0;
 			left: 40px;
 			right: 40px;
-			-webkit-transform: translate(0, 0);
-			-ms-transform: translate(0, 0);
-			-o-transform: translate(0, 0);
-			transform: translate(0, 0);
 			p {
 				margin: 60px 30px 0;
 			}

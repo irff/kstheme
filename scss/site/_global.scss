@@ -81,6 +81,10 @@ section,
 footer {
 	z-index: 1;
 	position: relative;
+    -webkit-transform:translateZ(1px);
+    -moz-transform:translateZ(1px);
+    -o-transform:translateZ(1px);
+    transform:translateZ(1px);
 }
 
 .separator-line {
