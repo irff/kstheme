@@ -141,17 +141,32 @@ section.nav {
 		text-transform: uppercase;
 	}
 
-	a.logo {
-		display: block;
-		padding: 25px 0 30px;
-		img {
-			height: 50px;
+	a {
+		color: $white;
+		padding: 10px 15px;
+		border-radius: 2px;
+		-webkit-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+
+		&:hover {
+			background: #fff;
+			color: $red-brand;
 		}
 	}
 
-	a {
-		color: $white;
+	a.logo {
+		display: block;
+		padding: 25px 0 30px;
+		border-radius: 0;
+		img {
+			height: 50px;
+		}
+		&:hover {
+			background: none;
+		}
 	}
+
 
 	@media #{$medium-only} {
 		.link {
@@ -211,7 +226,7 @@ section.quotes {
 	background-color: $blue-brand;
 	background-image: url('../assets/img/bg-quote.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	h1 {
 		color: $white;
 		margin: 0 0 45px;
