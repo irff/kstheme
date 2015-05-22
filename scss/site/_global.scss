@@ -92,3 +92,18 @@ footer {
 .container {
 	overflow: hidden;
 }
+
+input[type='submit'],	
+button,
+a.button {
+	color: $white;
+	background-color: $red-brand;
+	border-radius: 2px;
+	-webkit-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	&:hover {
+		color: $white;
+		background-color: $red-brand-hover;
+	}
+}

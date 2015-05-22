@@ -39,7 +39,7 @@ get_header(); ?>
 							<input type="text" placeholder="Nomor Handphone">
 						</div>
 						<div class="small-12 large-12 columns">
-							<input type="submit" value="Dukung" class="button bg-red">
+							<input type="submit" value="Dukung" class="button">
 						</div>
 					</div>
 				</form>
