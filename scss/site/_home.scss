@@ -142,7 +142,7 @@ section.nav {
 		font-weight: 900;
 		line-height: 110px;
 		display: inline;
-		margin: 0 65px;
+		margin: 0 50px;
 		text-transform: uppercase;
 	}
 
@@ -175,7 +175,10 @@ section.nav {
 
 	@media #{$medium-only} {
 		.link {
-			margin: 0 20px;
+			margin: 0 10px;
+			a {
+				padding: 7px 9px;
+			}
 		}
 
 		a.logo {

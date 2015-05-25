@@ -31,6 +31,7 @@
 		<a href="<?=bloginfo( 'url' )?>">Beranda</a>
 		<a href="/berita">Berita</a>
 		<a href="/biografi">Biografi</a>
+		<a href="/prestasi">Prestasi</a>
 		<a href="https://www.facebook.com/khairulsaleh1964">Facebook</a>
 		<button id="showMenu">Menu</button>
 	</nav>
