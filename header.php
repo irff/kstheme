@@ -28,12 +28,11 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<nav class="menu" id="menu">
-		<h3>Menu</h3>
 		<a href="<?=bloginfo( 'url' )?>">Beranda</a>
 		<a href="/berita">Berita</a>
 		<a href="/biografi">Biografi</a>
 		<a href="https://www.facebook.com/khairulsaleh1964">Facebook</a>
-		<button id="showMenu"><i class="fa fa-bars"></i></button>
+		<button id="showMenu">Menu</button>
 	</nav>
 	
 	<div class="preloader">

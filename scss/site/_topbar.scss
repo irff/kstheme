@@ -30,6 +30,7 @@ nav.menu {
     position: fixed;
     width: 250px;
     height: 100%;
+    padding: 30px;
     top: 0;
     right: -250px;
 
@@ -41,6 +42,10 @@ nav.menu {
 
     &.open {
     	right: 0px;
+    	button#showMenu {
+    		border-bottom: 1px solid $white;
+    		border-left: 1px solid $white;
+    	}
     }
 	
 	h3 {
@@ -50,7 +55,7 @@ nav.menu {
     
     a {
 	    display: block;
-	    padding: 10px 5px 10px 2em;
+	    padding: 12px 0;
 	    color: #ccc;
 	    color: rgba(255,255,255, 0.7);
 	    font-size: 17px;
@@ -67,14 +72,15 @@ nav.menu {
     }
 
 	button#showMenu {
+		text-transform: uppercase;
 		padding: 15px 20px;
 		position: fixed;
 		top: 0;
 		right: 0;
 		cursor: pointer;
 		color: #fff;
-		font-size: 20px;
-		border: 0px;
+		font-size: 16px;
+		letter-spacing: 1.5px;
 		background: $red-brand;
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
