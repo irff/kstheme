@@ -56,8 +56,25 @@
 	    classie.toggle( menuRight, 'open' );
 	};
 
-	$(window).stellar({
-		positionProperty: 'transform'
+	// $(window).stellar({
+	// 	positionProperty: 'transform'
+	// });
+
+
+	$(function($) {
+		function parallaxInit() {
+			$('.parallax').each(function() {
+				$(this).parallax('30%', 0.1);
+			});
+		}
+
+		if(!device.tablet() && !device.mobile()) {
+			$(window).bind('load', function() {
+				parallaxInit();
+			});
+		} else {
+			$('.parallax').addClass('no-parallax');
+		}
 	});
 </script>
 

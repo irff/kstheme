@@ -228,10 +228,19 @@ section.quotes {
 	position: relative;
 	padding: 100px 0 80px;
 	text-align: center;
-	background-color: $blue-brand;
 	background-image: url('../assets/img/bg-quote.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+
+	&.parallax {
+		background-attachment: fixed !important;
+		background-size: cover;
+	}
+
+	&.no-parallax {
+		background-attachment: scroll !important;
+		background-size: cover !important;
+	}
+
 	h1 {
 		color: $white;
 		margin: 0 0 45px;
