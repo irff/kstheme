@@ -13,14 +13,15 @@
 		a {
 			padding: 30px 30px;
 		}
-
-		&:not(:last-child):after {
-			margin: 5px auto 0;
-			content: '';
-			display: block;
-			width: 70%;
-			height: 3px;
-			background-color: $gray-c;
+		@media #{$small-only} {
+			&:not(:last-child):after {
+				margin: 5px auto 0;
+				content: '';
+				display: block;
+				width: 70%;
+				height: 3px;
+				background-color: $gray-c;
+			}
 		}
 	}
 
